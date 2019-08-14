@@ -1,2 +1,3 @@
 # h-Layers Logo [hLL]
-:point_right: [Live Demo](https://htmlpreview.github.io/?https://github.com/HG7777/h-Layers-Logo/blob/master/index.html) :point_left:
+
+:white_check_mark:<a href="https://htmlpreview.github.io/?https://github.com/HG7777/h-Layers-Logo/blob/master/index.html" target="_blank">[Live Demo]</a>:white_check_mark:
