@@ -1,0 +1,88 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo__outline {
+  /* stroke: #4A90E2; */
+  stroke: #D18237;
+}
+
+#d {
+  fill: #D66C44;
+}
+
+h1 {
+  white-space: normal;
+  width: 150px;
+  font-family: "Titillium Web";
+  font-weight: 100;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0);
+  transition: all 250ms;
+  transform: translateX(-50px);
+}
+
+.logo__paths path {
+  transition: all 150ms;
+  transition-timing-function: ease-out;
+}
+
+.logo:hover #r1 {
+  transform: translateX(0px);
+  stroke: #FEB758;
+  transition-delay: 0ms;
+}
+.logo:hover #r2 {
+  transform: translateX(10px);
+  stroke: #D66C44;
+  transition-delay: 50ms;
+}
+.logo:hover #r3 {
+  transform: translateX(20px);
+  stroke: #D66C44;
+  transition-delay: 100ms;
+}
+.logo:hover #d {
+  transform: translateX(35px);
+  stroke: #D66C44;
+  fill: #FEB758;
+  transition-delay: 150ms;
+}
+.logo:hover h1 {
+  color: black;
+  transform: translateX(0px);
+  transition-delay: 150ms;
+}
+
+.logo:active #r1 {
+  transform: translateX(0px);
+}
+.logo:active #r2 {
+  transform: translateX(-5px);
+}
+.logo:active #r3 {
+  transform: translateX(-10px);
+}
+.logo:active #r1, .logo:active #r2, .logo:active #r3 {
+  stroke: #2275d7;
+}
+.logo:active #d {
+  transform: translateX(-10px);
+  stroke: #2275d7;
+  fill: #2275d7;
+}
+.logo:active h1 {
+  transform: translateX(-100px);
+  color: rgba(0, 0, 0, 0);
+}

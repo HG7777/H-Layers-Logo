@@ -1,0 +1,94 @@
+$fire: #D66C44;
+
+body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo__outline {
+  stroke: $fire;
+}
+
+#d {
+  fill: $fire;
+}
+
+h1{
+  white-space: normal;
+  width: 150px;
+  font-family: "Titillium Web";
+  font-weight: 100;
+  line-height: 1;
+  color: rgba(0,0,0,0);
+  transition: all 250ms;
+  transform: translateX(-50px);
+}
+
+.logo__paths path {
+  transition: all 150ms;
+  transition-timing-function: ease-out;
+}
+
+.logo:hover {
+  #r1 {
+    transform: translateX(0px);
+    stroke: lighten($fire, 0%);
+    transition-delay: 0ms;
+  }
+  #r2 {
+    transform: translateX(10px);
+    stroke: lighten($fire, 5%);
+    transition-delay: 50ms;
+  }
+  #r3 {
+    transform: translateX(20px);
+    stroke: lighten($fire, 10%);
+    transition-delay: 100ms;
+
+  }
+  #d {
+    transform: translateX(35px);
+    stroke: lighten($fire, 15%);
+    fill: lighten($fire, 15%);
+    transition-delay: 150ms;
+
+  }
+  h1{
+    color: rgba(0,0,0,1);
+    transform: translateX(0px);
+    transition-delay: 150ms;
+  }
+}
+.logo:active {
+  #r1 {
+    transform: translateX(0px);
+  }
+  #r2 {
+    transform: translateX(-5px);
+  }
+  #r3 {
+    transform: translateX(-10px);
+  }
+  #r1, #r2, #r3  {
+    stroke: darken($fire, 10%);
+  }
+  #d {
+    transform: translateX(-10px);
+    stroke: darken($fire, 10%);
+    fill: darken($fire, 10%);
+  }
+  h1 {
+    transform: translateX(-100px);
+    color: rgba(0,0,0,0);
+  }
+}
